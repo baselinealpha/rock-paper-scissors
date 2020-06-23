@@ -43,7 +43,7 @@ function rockFunction(){
     else {
         aiOption = "Scissors";
         document.getElementById("game-status-display").innerHTML = `${statusDisplay} and I chose ${aiOption}`;
-        document.getElementById("game-output-display").innerHTML = "Oh shit :-( You win!"
+        document.getElementById("game-output-display").innerHTML = ":-( You win!"
     }
 }
 
