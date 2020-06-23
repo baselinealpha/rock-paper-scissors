@@ -1,7 +1,7 @@
 body {
-    padding-top: 2em;
     background-color: khaki;
     font-family: monospace;
+    height: 100%;
 }
 
 header {
@@ -30,10 +30,10 @@ header {
 }
 
 main {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 
 #choose-text {
@@ -43,7 +43,8 @@ main {
 #game-div {
     display: flex;
     flex-direction: row;
-    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     align-items: center;
     transform: rotate(10deg);
 }
