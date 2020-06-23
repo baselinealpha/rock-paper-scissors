@@ -107,7 +107,7 @@ function paperFunction(){
     else {
         aiOption = "Scissors";
         document.getElementById("game-status-display").innerHTML = `${statusDisplay} and I chose ${aiOption}`;
-        document.getElementById("game-output-display").innerHTML = "I win! Don't worry, you'll be fine..."
+        document.getElementById("game-output-display").innerHTML = "I win! Relax, you'll be fine"
     }
 }
 
