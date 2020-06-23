@@ -64,7 +64,7 @@ function scissorsFunction(){
         if (aiPick < 0.34) {
             aiOption = "Rock";
             document.getElementById("game-status-display").innerHTML = `${statusDisplay} and I chose ${aiOption}`;
-            document.getElementById("game-output-display").innerHTML = "Well look who's broken. I win!"
+            document.getElementById("game-output-display").innerHTML = "Look who's broken. I win!"
         }
         else {
             aiOption = "Paper";
