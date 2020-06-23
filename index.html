@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Game - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--Game title and rules link-->
+    <header>
+      <h1>
+        Rock Paper Scissors
+      </h1>
+      <a onclick="rulesToggle()" id="rules-toggle">
+        Read rules
+      </a>
+    </header>
+
+    <!--Rules container-->
+    <div id="rules-div">
+      <span onclick="rulesClose()" id="close-rules">
+        <strong>
+          X
+        </strong>
+      </span>
+      <!--Rules-->
+      <ul id="rules-list">
+        <li>Rock beats Scissors</li>
+        <li>Scissors cut Paper</li>
+        <li>Paper wraps Rock</li>
+      </ul>
+    </div>
+
+
+    <main id="main">
+
+      <h2 id="choose-text">
+        Choose!
+      </h2>
+      <!--The Game-->
+      <div id="game-div">
+        <div id="rock-div">
+          <button onclick="rockFunction()" class="game-button" id="rock-button">
+            <img class="game-icon" id="rock" src="icons/icons8-hand-rock-48.png">
+          </button>
+        </div>
+        <div id="paper-scissors-div">
+          <button onclick="paperFunction()" class="game-button" id="paper-button">
+            <img class="game-icon" id="paper" src="icons/icons8-hand-48.png">
+          </button>
+          <button onclick="scissorsFunction()" class="game-button" id="scissors-button">
+            <img class="game-icon" id="scissors" src="icons/icons8-hand-scissors-48.png">
+          </button>
+        </div>
+      </div>
+
+      <!--Results container-->
+      <div id="game-results-div">
+        <h3 id="game-status-display">
+
+        </h3>
+        <h2 id="game-output-display">
+
+        </h2>
+        <button onclick="resetFunction()" id="game-reset-button">
+          Play Again
+        </button>
+      </div>
+    </main>
+    <footer><P>Experiment by <a class="footer-link" href="https://github.com/baselinealpha">Baseline Alpha</a></P></footer>
+    <script src="game.js"></script>
+  </body>
+</html>
